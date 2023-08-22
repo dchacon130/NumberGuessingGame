@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Number Guess In Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+    <body>
+        <!-- Header -->
+        <header id='header'>
+            <h1>Number Guessing Game</h1>
+        </header>
+        <!-- Top menu -->
+        <nav></nav>
+        <!-- Content -->
+        <main id="content">
+            {% block content %}
+            <!-- Se muestra el contenido de las paginas -->
+            {% endblock content %}
+        </main>
+        <!-- Side bar -->
+        <aside></aside>
+        <!-- Footer -->
+        <footer id="footer">
+            {% include 'includes/footer.html' %}
+        </footer>
+        <script src="" async defer></script>
+    </body>
+</html>
